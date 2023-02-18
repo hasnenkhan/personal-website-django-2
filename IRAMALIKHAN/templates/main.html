@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Iram Fatima</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Iram" name="keywords">
+    <meta content="Iram" name="description">
+    {% load static %}
+
+    <!-- Favicon -->
+    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Iram</span>Fatima</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Quality</a>
+                <a href="#skill" class="nav-item nav-link">Skill</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="#contact" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="{% static 'img/profile.jpg' %}" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Iram Fatima</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Content Writer, Proofreader, Editer, Translator, Transcriptionist</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="{% static 'img/iramfatima_CV.pdf' %}" download class="btn btn-outline-light mr-5">Download CV</a>
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="{% static 'img/creative_writing.pdf' %}" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Certificate</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="{% static 'img/iram2.jpg' %}" alt="iram's photo">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Hello There</h3>
+                    <p>This is Iram Fatima. I hail from Orai, U.P. and have completed my graduation from JNU, New Delhi. Currently,
+                        I'm a Masters student and a full time freelancer.<br>
+                        I would like to describe myself as a Cinephile, Foodie and 
+                        Travel enthusiast. I am also a Multilingual. I like to write about things that I like or dislike. <br>
+                        Scroll down to know more about me and see my work samples.  
+                    </p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Iram Fatima</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">23 August 1998</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Post Graduate</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">1.5 Years</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+919506168766 </span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">iram12336@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Munirka , New Delhi</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
+                    </div>
+                    <a href="#contact" class="btn btn-outline-primary mr-4">Hire Me</a>
+                    <a href="#qualification" class="btn btn-outline-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Graduation</h5>
+                            <p class="mb-2">In Russian language and Literature</p>
+                            <p class="mb-2"><strong>JNU, NEW DELHI</strong> | <small>2017 - 2020</small></p>
+                            <p>Completed a 3-year degree with Russian language as major and many minor subjects 
+                            including Socio-Linguistics, Morphology, Human Rights, Environmental Science and English Poetry </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Masters</h5>
+                            <p class="mb-2">In Political Science </p>
+                            <p class="mb-2"><strong>IGNOU, NEW DELHI</strong> | <small>2021 - 2023</small></p>
+                            <p>Currently pursuing 2-year Masters degree in Political Science </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Expericence</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Language and Technical support agent</h5>
+                            <p class="mb-2"><strong>CSS Corp (Movate), Chennai</strong> | <small>May 2021-June 2022</small></p>
+                            <p>Worked as a full time player support specialist for Russian players for Activision's CODM (Call Of Duty Mobile)</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Customer Service Agent (Product and Technical)</h5>
+                            <p class="mb-2"><strong>Bumble, London, UK</strong> | <small>Aug 2022-Sep 2022</small></p>
+                            <p>Worked as online Freelancer on product and technical related queries for Badoo app</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">English Language</h6>
+                            <h6 class="font-weight-bold">96%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Russian Language</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Hindi Language</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">MS Office</h6>
+                            <h6 class="font-weight-bold">75%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Communication Skills</h6>
+                            <h6 class="font-weight-bold">92%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Writng Skills</h6>
+                            <h6 class="font-weight-bold">95%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Movie Reviews</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Book Reviews</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Articles</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".forth">Others</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="{% static 'img/authority.jpeg' %}" alt="authority">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <div class="open-button" onclick="openform1()">
+                                <i class="fa fa-plus text-white" id="plus" style="font-size: 60px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-popup" id="myForm1">
+                        <button type="button" class="btn-cancel" onclick="closeform1()">Close</button>
+                        <div class="cop-head">
+                            <u>CONCEPT OF POWER FOR BEGINNERS</u>
+                        </div>
+                        
+                        <div class="cop-body">
+                            <p>For ages, Power as a concept has been highly debated and contested. Politics is all about Power,
+                                 and the practice of politics is often portrayed as little more than the exercise of Power.
+                                  While studying politics, we often seek the answers to a few questions, such as who has it, how it is used,
+                                 how it is exercised, how to acquire it, whether it is evenly distributed or concentrated, and many more.
+                            </p>
+                            <p>The term ‘POWER’ can be defined in numerous ways. For example, in science, it is often understood as energy.
+                                 In contrast, in social sciences, it is loosely understood as the ability to influence other 
+                                 people or government or law, or civil society. It is also understood as the capacity to take some decision and implement
+                                  it successfully by controlling people or using external methods. Some relevant examples from our day-to-day 
+                                  life are the Power of parents over children, masters over enslaved people, owners over workers, government
+                                   over citizens, etc. Power is a feature of our society.
+                            </p>
+                            <p>A perfectly acceptable definition of Power that can encompass all its various manifestations:if A gets B to do something
+                                 A wants but which B would not have chosen to do, Power is being exercised. In other words, Power is the 
+                                 ability to get someone to do what they would not otherwise have done.So,Power can be said to have three faces.
+                                 First,it can involve the ability to influence the making of decisions; second, it may prevent decisions from being made;
+                                 andthird, it may take the form of controlling people’s thoughts by manipulating their perceptions and 
+                                 preferences.
+                            </p>
+                            <p>Power can sometimes be termed as possession reflected through the control of wealth, political position, social status,
+                                and sometimes class or caste. And from here comes the term ‘ruling elites.’ The time ‘ruling elites’ stands for a group
+                                of privileged people in society who acquires the Power to influence the decision of the whole community or sometimes
+                                thestate.Sometimes it also happens that a group may gain some power but choose not to use it because they do not
+                                anticipate that the decisions made will adversely affect them. For example, private businesses
+                                may show little interest in health, housing, and education – unless increased welfare spending threatens to push up taxes.
+                            </p>
+                            <p>The Marxist theory views Power as distributed unequally in a class-divided society, such as a capitalist society,
+                                 where the ruling classes own the means of production and exercise Power over the working class, which holds no property,
+                                 but produces surplus value through its labor power that the capitalist appreciates. Feminist theory
+                                understands Power as located with in structures of patriarchy, which ensures that there is systematic domination
+                                of women by men. In both views, Power seems to be situated in the system, and individuals derive Power from the
+                                irpositions.The same applies to a dominant-class society where the upper class oppresses and
+                                exploits the lower class. The upper class gets the authority to exercise this Power because of the class
+                                structure prevalent in the society or sometimes caste structure.
+                            </p>
+                            <p>In a liberal democratic system, political groups often act as interest groups, favoring the articulation of 
+                                specific views and interests while restricting the expression of others. And presently, looking at the
+                                situation of our own country India,we can’t get a better example of such interest groups.
+                                 People in our society might not even know their minds because they have the habit of getting influenced.
+                                  Ordinary people have always been the victim of class exploitation and oppression within which Power is 
+                                  concentrated in the hands of a ‘ruling class, the bourgeoisie. In Marx’s view, any society's dominant 
+                                  ideas, values, and beliefs are the ideas of its ruling class. Thus the exploited class, the 
+                                  proletariat, is deluded by the weight of bourgeois ideas. Lukes’s solution to this problem is to suggest
+                                   that people’s fundamental interests are‘what they would want and prefer were they able to make a choice.
+                                    In other words, only rational and autonomous individuals can identify their own ‘real’ interests.
+                            </p>
+                            <p>
+                                The exercise of Power is traditionally linked to politics, but when narrowed down, another term comes,
+                                 ‘authority’ often termed as ‘political authority. Power and authority are often understood as synonyms,
+                                  but there is a slight difference between the two. Power is the ability to influence society, whereas
+                                authority is the right to control. Power brings about compliance through persuasion, pressure, threats,
+                                 coercion, or violence. On the other hand,authority is based upon a perceived ‘right to rule’ and brings
+                                  about compliance through a moral obligation on the part of the ruled to obey.
+                            </p>
+                            <p>
+                                Coming to persuasion is an effective and widely used means of influencing the behavior of another. We
+                                 can’t get a better example of effectiveness than electoral politics. Electoral politics is all about
+                                  persuasion through different methods- political parties campaign, advertise and organize meetings and 
+                                 rallies, hoping to influence voters on Election Day.
+                            </p>
+                            <p>
+                                At last, Power is central to the understanding and practice of politics, and it can be exercised on 
+                                three levels: 
+                            </p>
+                            <ul style="text-align:left;">
+                                <li>through the ability to make or influence decisions;</li>
+                                <li> through the ability to set the agenda and prevent decisions from being made;</li>
+                                <li>and through the ability to manipulate what people think and want.</li>
+                            </ul>
+                            <p>Politics is all about power, and our everyday life is all related to politics</p>
+                        </div>
+                  </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="{% static 'img/bandit_queen.jpg' %}" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <div class="open-button" onclick="openform2()">
+                                <i class="fa fa-plus text-white" id="plus" style="font-size: 60px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-popup" id="myForm2">
+                    <button type="button" class="btn-cancel" onclick="closeform2()">Close</button>
+                    <div class="cop-head">
+                       <u>CRITICAL ANALYSIS OF THE FILM "BANDIT QUEEN”</u>
+                    </div> 
+
+                    <div class="cop-body">
+                        <p>
+                            The movie ‘’Bandit Queen’’ has been Located at the intersection of gender, caste, and class oppression which women,
+                             particularly in rural India as well as in urban spheres, have been continuously subjected to face for centuries 
+                             and are still facing. Transcending through these atrocities majority of her life, since the very inception of 
+                             her womanhood as a woman trapped in the complexities, Phoolan Devi has come to symbolize an extreme, not
+                              necessarily of oppression but of contestation.Shekhar Kapur's film Bandit Queen came in 1994 as a story of
+                               oppression and revenge plotted neatly on the grid of gender and caste.
+                        </p>
+                        <p>
+                            Until recently, the average Indian's knowledge of Phoolan Devi came from her constructions in the print media 
+                            over the years that she was the product of the arid, rocky Chambal Valley which straddles the Indian states of
+                             Uttar Pradesh and Madhya Pradesh, and which has historically been the cradle of dacoits or armed bandits; 
+                             that she controlled the area with her daring exploits, murdering, looting and occasionally playing Robin Hood,
+                              eluded the two State governments until she was persuaded to surrender voluntarily in early 1983 After that
+                               she was subsequently forced to serve a long prison term. The woman behind all this publicity assumed a 
+                               recognizable shape only after her release from jail in 1994, as well as with the projection of her
+                                life in the movie Bandit Queen.
+                        </p>
+                        <p>
+                            The question here is how the film has shaped the identity of Phoolan Devi? I want to dive deeper into the
+                             ways and notions around which the depiction of the personality of Phoolan Devi has been done in the movie
+                              Bandit Queen. Shekhar Kapur's storytelling is gripping enough to keep you going for two hours. I was
+                               left asking for more toward the end, though. It was an underwhelming end to a roaring start. Or was it
+                                the over-emphasis on the rape-and-retribution theme? Or, Eventually, was it the material that needed
+                                 to be produced for the average Indian audience along with the notion of gazing at a rape victim? I
+                                  will like to address the question of the portrayal of subaltern third-world women as the mute bearers
+                                   of violence as a means of invested interest and material of consumption for the western world as
+                                    this film has been directed with the collaboration of a British production company, even scripted
+                            by a British journalist Mala Sen based on her book "India's Bandit Queen: The True Story of Phoolan Devi",
+                            which she wrote after having several interviews with Phoolan Devi while she was serving her punishment in
+                            Jail. As the film had colossal reception across western audiences, the film premiered in the Directors’
+                            Fortnight section of the 1994 Cannes Film Festivals and was screened at the Edinburgh Film Festival.
+                            That year, the film won the National Film Award for Best Feature Film in Hindi and Filmfare Critics Award
+                            for Best Movie and Best Direction.
+                        </p>
+                        <p>
+                            I am trying to say here that the film's reception has certainly been different across these two worlds.
+                            But the larger audience of the film was the Indian middle class which always sees rape victims with social 
+                            stigmas of victimhood and sympathy, which is the same thing that happened in the character of Phoolan Devi 
+                            in this film. She has been portrayed more as a victim than a female who is assertive and resentful against 
+                            the atrocities carried out with her at various stages of her life as a woman. Kapur’s projection of Phoolan 
+                            Devi's character resonates with the idea of the patriarchal reaction of men who find it impossible to recognize 
+                            a woman’s agency of self-assertion. They will always treat it as circumstantial, personal revenge, or anything 
+                            that will take away the notion of a revolutionary form of assertion. There is a quote from her autobiography 
+                            that I found very relevant to show how she became a woman of her choice, assertion, and resentment from the 
+                            very beginning. "The poor must bow down and touch the feet of the rich. The poor eat a few grains of millet 
+                            while the rich feast on mangoes. The pain of hunger in the belly of the poor produces fear and submission. 
+                            I tried to submit, as my father said I should, but I was unable. I was like my mother. There was too much 
+                            anger in me."
+                        </p>
+                        <p>
+                            At one level,  the film signifies "strategies of invested representation" that fit terms of the Western 
+                            consumption of the heroic representation of a third-world woman against her oppressions while at the same 
+                            time keeping the needs of a larger audience at the center of the portrayal of the woman character. This is 
+                            what visual media does; It transforms the whole narrative around a personality by merely depicting the things 
+                            suited for the cultural consumption of the audience.In the national public sphere in India, the film Bandit 
+                            Queen sparked a contentious and distinctive debate on the politics of authenticity, authority, and 
+                            responsibility in representing the problems and struggles of an individual, particularly a female from a 
+                            minority group. The controversy centered on the politics of gender and sexuality since director Kapur presents 
+                            various scenes of rapes, one of which is a gang rape of Phoolan Devi. This touched a raw nerve of public 
+                            (middle-class) morality within the Indian public sphere. The film underwent a significant battle against 
+                            censorship with the Central Board of Film Certification (CBFC), the Supreme Court of India, and the Delhi 
+                            High Court due to the petition filed by the Gujjar community and a petition filed by Phoolan Devi herself 
+                            against the director of the film for misrepresentation of various facts about Phoolan Devi’s own life.
+                        </p>
+                        <p>
+                            Phoolan Devi's empowerment is always dependent on the males in the film, so she is empowered only when backed 
+                            by the men around her. More pointing to a "recurring pattern in the film where she is rescued and empowered 
+                            in the hegemonic male world of dacoits. Be it the depiction of her association with Vikram Mallah and being 
+                            co-partnered as the head of the gangs of dacoits with Maan Singh. The male gaze projection of her relationship 
+                            with Vikram Mallah conforms to the notion of subversion of her female agency by making her a woman of precise 
+                            empowerment. At the same time, I am talking about the dominant masculine factors depicted in the film as a 
+                            significant reason for her conversion of identity from a woman of victimhood to a woman of assertion and 
+                            resentment. At the same time, I would like to bring out the constant deployment of the male gaze in the 
+                            film towards her as a woman who is a widow and also belongs to the lower caste of the social hierarchy.
+                        </p>
+                        <p>
+                            While Phoolan Devi failed as a biographical drama to represent the factual accounts of Devi’s journey as a 
+                            dacoit, what it offers is a victimized Phoolan Devi who takes up arms due to repeated sexual assaults and 
+                            abuse. Phoolan’s struggle is not just against her rapists but also against the upper caste men and local 
+                            authorities who strip her of dignity. Therefore, as villains run loose, innocents are killed while the 
+                            viewers are compensated with the joy of seeing Phoolan enter politics. However, there are no answers offered 
+                            by the film regarding the overall safety and protection of women, and neither is there a debate on our social 
+                            justice system. While Phoolan may be reckoned as a symbol of female strength in Indian films, hers is a 
+                            personal battle as she does not offer any solutions to the widespread problems of women being treated as sex 
+                            objects.
+                        </p>
+                        <p>
+                            I have also argued how the collaborative projects between a colonized nation and colonizer can form such 
+                            material consumption that fits the western world's gaze on the third world and its women. The making of the 
+                            film was a brave attempt by Shekhar Kapoor to show the caste, class, and gender-based violence in post-colonial 
+                            modern India. Still, the film fails to address the question of challenges faced by women in our social and 
+                            judicial system for seeking justice against the violence they go through daily. Lastly, the film just left 
+                            Phoolan Devi’s Identity as a victim of rape, leading to vengeance. At the same time, her personality has much 
+                            more to be seen from the feminist perspective of making a woman through her experiences based on her caste, 
+                            class, and gender.
+                        </p>
+                        <p>
+                            Bibliographies
+                        </p>
+                        <ol>
+                            <li>
+                                Reading "India's Bandit Queen": A Trans/national Feminist Perspective on the Discrepancies of 
+                                Representation   Author(s): Leela Fernandes.
+                            </li>
+                            <li>
+                                <a href="https://feminisminindia.com/2017/09/21/female-vigilantism-indian-cinema">
+                                    https://feminisminindia.com/2017/09/21/female-vigilantism-indian-cinema
+                                </a>
+                            </li>
+                            <li>
+                                ‘Disgusting and revolting and obscene’: ‘Bandit Queen’ and the censors 9 min read by Tanul Thakur Shehar 
+                                Kapur's path-breaking film, 'Bandit Queen,' went through all kinds of checks, from the CBFC's examining 
+                                committee to the Supreme Court, before its release.
+                                <p>
+                                    <a href="https://www.livemint.com/Leisure/VDNX1GQ7uY2b2v4HYcxRhK/Disgusting-and-revolting -and-obscene-Bandit-Queen-and-t.html">
+                                        https://www.livemint.com/Leisure/VDNX1GQ7uY2b2v4HYcxRhK/Disgusting-and-revolting -and-obscene-Bandit-Queen-and-t.html
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                Bandit Queen: Depicting Rape And The “Third World Heroic Woman.”
+                                <p>
+                                    <a href="https://feminisminindia.com/2020/01/20/bandit-queen-rape-world-heroic-woman/">
+                                        https://feminisminindia.com/2020/01/20/bandit-queen-rape-world-heroic-woman/ 
+                                    </a>
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="{% static 'img/women_dev.jpg' %}" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <div class="open-button" onclick="openform3()">
+                                <i class="fa fa-plus text-white" id="plus" style="font-size: 60px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-popup" id="myForm3">
+                    <button type="button" class="btn-cancel" onclick="closeform3()">Close</button>
+                    <div class="cop-head">
+                        <u>ROLE OF YOUNG WOMEN IN SOCIAL DEVELOPMENT</u>
+                    </div>
+                    <div class="cop-body">
+                        <p style="text-align:center ;"><u>Introduction</u></p>
+                        <p>
+                            This is the 21st Century but still, women continue to be underrepresented on a global and regional scale. 
+                            To fully participate in public life and hold leadership positions, women must struggle against 
+                            discriminatory laws, institutions, and attitudes. Inequality in access to the resources needed to develop 
+                            into good leaders further disadvantages women. Both gender and age discrimination affects young women. 
+                            Young women's capacity to realize their full leadership potential is particularly hampered by huge gaps in 
+                            funding and resources for education, skill development, and mentoring. A life-cycle approach is necessary to 
+                            support and strengthen girls' leadership, teenage girls' leadership, young women's leadership, and female 
+                            leadership. We are aware that investing in the leadership of young women will alter not only their future 
+                            but also their present.
+                        </p>
+                        <p>
+                            India has had tremendous economic growth in recent years, with its GDP per capita rising from $375 to 
+                            $1,572 between 1990 and 2015. However, such economic expansion has not been accompanied by advancements 
+                            in assuring the equitable involvement of women in the economy. Compared to 96 percent for males, women's 
+                            labour force participation rates (FLFPR) are far lower at only 27 percent. Due to varying estimates from 
+                            many sources, including governmental organisations and university scholars, methodological disagreements 
+                            have developed. However, given the global average of 49%, it is clear that there are not enough women in 
+                            the workforce in India. The current study has found four key aspects that contribute to the explanation of 
+                            India's low and possible fall-FLFP rate.
+                        </p>
+                        <p>
+                            <ol>
+                                <li>
+                                    The widespread adoption of patriarchal societal norms that restrict women's independence, mobility, 
+                                    and right to work;
+                                </li>
+                                <li>
+                                    The increasing household earnings that restrict women's access to the labour market are mostly 
+                                    determined by the same factors;
+                                </li>
+                                <li>
+                                    Women bear a disproportionate amount of unpaid work and caregiving responsibilities, and
+                                </li>
+                                <li>
+                                    There aren't many high-quality positions available because of the gender wage gap and 
+                                    occupational segregation.
+                                </li>
+                            </ol>
+                        </p>
+                        <p>
+                            66 percent of the work performed by Indian women is often unpaid, compared to 12 percent of the work 
+                            performed by males. This is a global trend since women everywhere are struggling to balance unpaid employment 
+                            with children. According to the OECD, women in India labour unpaid for 352 minutes on average each day 
+                            compared to 52 minutes for males. In India, women devote an average of 297 minutes a day to unpaid caregiving 
+                            activities including looking after children, the elderly, and the ill. Men devote just 31 minutes per day. 
+                            This is significant since studies have shown a negative correlation between the length of time women and 
+                            girls spend doing unpaid jobs and their level of economic independence. For instance, a 2018 survey's findings 
+                            revealed that girls' schoolwork and housework contribute to the gender gap in secondary schooling. At the same 
+                            time, more than 40% of the males polled stated that they did not think married women who had good-paying husbands 
+                            should leave the house. The hardship of unpaid employment is made worse by the belief that women shouldn't leave 
+                            the private sector in the absence of financial necessity.
+                        </p>
+                        <p style="text-align:center;">
+                            <u>Theories and Paradigms</u>
+                        </p>
+                        <p>
+                            Although feminist ideals were proclaimed as far back as ancient China, they were not backed by a mature political 
+                            theory until Mary Wollstonecraft's book promoting women's rights was published (1792). The so-called "first wave 
+                            feminism" movement, which emerged in the 1840s and 1850s in response to the women's suffrage movement, was the 
+                            first to widely popularise feminist ideals. But in the 1960s, "second wave feminism" appeared. In it, the 
+                            increasing women's liberation movement's more radical and occasionally revolutionary demands were stated (WLM). 
+                            Diverse feminist beliefs and ideologies all share the ambition to somehow improve the social role of women as 
+                            their common thread. Feminism's fundamental tenets are, therefore, that society is marked by sexual or gender 
+                            inequality and that this male dominance structure can and should be overthrown. Traditionally, feminist philosophy 
+                            has been broken down into liberal, socialist, and radical schools of thought. Liberal feminists like Wollstonecraft 
+                            and Betty Friedan recognize how women are treated less favorably in society because of the unequal distribution of 
+                            rights and opportunities.
+                        </p>
+                        <p>
+                            The core of this "egalitarian feminism" is reformism. It is more closely related to the reform of the "public" 
+                            domain, i.e., the improvement of women's legal and political circumstances as well as their opportunities for 
+                            education and employment, than it is to the reorganization of "private" or domestic life. Socialist feminists, 
+                            in contrast, frequently draw attention to the relationship between women's subordination and the capitalist mode 
+                            of production, highlighting the economic significance of the fact that women are restricted to family or domestic 
+                            life, where they, for example, relieve men of the burden of domestic labor, act as a reserve army of capitalist 
+                            workers, and aid in educating and empowering the next generation of women.
+                        </p>
+                        <p>
+                            However, feminist criticism, which has emerged and is not a natural part of classic political theories like 
+                            feminism, is largely to blame for the distinctive flavor of second-wave feminism. Radical feminists contend 
+                            that the most important and basic divisions in society are those based on gender. According to her, patriarchy—an 
+                            institution in which, to quote Kate Millet—"half of the population that is female IS governed by that half 
+                            male"—defines all cultures, whether ancient or contemporary. Therefore, radical feminists advocate for a sexual 
+                            revolution that will rebuild society in general and personal, domestic, and family life in particular. As a result, 
+                            the radical feminism catchphrase is "personal is political." Radical feminism, which is frequently portrayed as 
+                            political homosexuality, does not, however, advocate for women to leave male society or characterize men as 
+                            "enemies," except in its most extreme forms. However, since the 1970s, feminism has evolved beyond the three 
+                            categories of liberal, socialist, and radical traditions in many ways.
+                        </p>
+                        <p>
+                            Though "new feminism" and "third wave feminism" are distinct from one another, they are both characterized by 
+                            skepticism against the widely held objective of gender equality and a focus on disparities between women and men 
+                            as well as among themselves.
+                        </p>
+                        <p>
+                            Liberal Feminism: The "socialization process" is the fundamental cause of gender disparity (the learning process 
+                            through which you acquire the knowledge, skills, and motivation necessary to participate in public life).
+                        </p>
+                        <p>
+                            Women's lives were influenced by regulations and biases (held by both men and women) that kept them out of the 
+                            public eye and denied them the right to make a living on a par with men.
+                        </p>
+                        <p>
+                            Women campaigned for the right to vote, which became a sign of complete citizenship, as well as the right to 
+                            further education, pursue a career, own property, occupy public office, and gain a profession.
+                        </p>
+                        <p>
+                            Socialist Feminism: It is not merely a by-product of class that there is an oppressive connection between the 
+                            sexes. It is necessary to break the link between sexual harassment and bullying in class.
+                        </p>
+                        <p>
+                            By highlighting the so-called domestic labour performed by women, the capitalist system is kept in place. As
+                            a result, the bourgeoisie and specific males both profit from women providing unpaid and individualized household services.
+                        </p>
+                        <p>
+                            Some socialist feminists have examined the interplay between the family/private home sphere and the public sphere
+                            of capitalism and governmental interactions. Differences between the private and the public foster unequal 
+                            relationships between men and women in society
+                        </p>
+                        <p>
+                            Radical Feminism: The material differences between men and women are what causes gender inequality. Natural 
+                            power imbalances exist in biological families.
+                        </p>
+                        <p>
+                            Similar to Marxism, which contends that monogamy was the only type of family that was not based on biological, 
+                            but rather on economic factors: the exclusive goals of monogamous marriage were to predominate and reproduce a 
+                            person in the family, as the future heirs of his wealth, children who were unquestionably his own. The only 
+                            goal of monogamous marriage is to give the male sex priority over the female sex. To maintain control, they 
+                            create institutions that recognize men's dominance over women and their capacity to dominate women sexually.
+                        </p>
+                        <p>
+                            Males are the primary beneficiaries of patriarchal civilizations like those in the West, which are ruled by men. 
+                            Forced heterosexuality assures that women are economically, socially, and psychologically dependent on males in 
+                            a world where men and women hold uneven power relations.
+                        </p>
+                        <p style="text-align:center;">
+                            <u>Women in Business Sector</u>
+                        </p>
+                        <p>
+                            The environment for business is evolving. Except for the COVID-19 epidemic, opinions regarding "conventional" 
+                            corporate practices are evolving. Furthermore, there is reason to think that women will have a significant 
+                            influence on this new industry. The term "women in business" alludes to the historical exclusion of women 
+                            from positions of leadership, particularly in commerce, company, and entrepreneurship. These days, this 
+                            expression promotes increasing the number of women working in business, enhancing workforce diversity, and 
+                            advancing intellectual discourse. Women are represented more equally in corporate leadership roles and the 
+                            entrepreneurial sector now than there were during the preceding period.
+                        </p>
+                        <p>
+                            The development of firms, ideas, and products must be diverse, which requires increasing the participation of 
+                            women in business. The growth of social networks and support that benefit women and their social surroundings 
+                            are also facilitated by participation.
+                        </p>
+                        <p>
+                            The idea that women should stay at home and cook, clean, and take care of the family has been a problem for 
+                            women for generations. Women started to enter the workforce and find broad success in a variety of areas to 
+                            increase prospects for equality and general life happiness.
+                        </p>
+                        <p>
+                            Many people are unaware of how far back in history women's entrepreneurship can be traced. Around the northern 
+                            Iraqi city of Asur, the first known businessmen first arrived in 1870 BC. Indicating that commerce was open to 
+                            women at the time, Assyrian women frequently participated in the enormous commercial network that thrived in the 
+                            area.
+                        </p>
+                        <p>
+                            There are plenty more modern instances of women in business. For instance, before she became a business agent, 
+                            Margaret Hardenbrook established herself as a debt collector before moving to New York City in 1659. She conducted 
+                            business between Holland and the colonies and grew to be the richest lady in New York.
+                        </p>
+                        <p>
+                            Contrary to popular belief, such tales are not as uncommon. Businesswomen traded in significant cities all over 
+                            the world in the 18th century, and there are several cases of prosperous women entrepreneurs running and growing their 
+                            firms. In 1766, Mary Catherine Goddard became the country's first female publisher; in the 1890s, Madame CJ Walker 
+                            ran a million-dollar hair treatment company; and in 1913, Coco Chanel launched her first store. But when the 
+                            workforce shifted in the middle of the 19th century, males began to get all of the salaries while women focused 
+                            more on household responsibilities.
+                        </p>
+                        <p>
+                        For instance, Katherine Graham was the sole female CEO of the Fortune 500 corporation in 1973. Only 38% of American 
+                        workers at the time were women. This percentage increased to 46.2% in 2019, and there were 37 Fortune 500 businesses 
+                        with female CEOs.The tendency for women to hold senior roles appears to be rising as more well-known companies, like 
+                        IBM, General Motors, and Mondelez International, employ women for these positions. There are now more women working 
+                        for Fortune 500 corporations than at any other point in the list's 63-year existence.
+                        </p>
+                        <p>
+                            Around the world, there are huge differences in how women are treated in the workplace. The number of women-owned 
+                            businesses has increased by almost 3,000% since 1972, according to the "2018 Report on the State of Women-Owned 
+                            Enterprises," which American Express commissioned. Although society has made significant progress in promoting 
+                            women in business, there are still issues with a lack of professional orientation, family obligations, gender 
+                            discrimination, a lack of sufficient capital, inadequate education, and lack of access to or training in the use 
+                            of technology. Women are constrained by their social and political surroundings more than males are.
+                        </p>
+                        <p>
+                            Both industrialized and developing nations are seeing an increase in the number of women starting their businesses, 
+                            and national governments are becoming more aware of this trend.Even though they make up 47.00% of all workers, 
+                            women only make up 6.2% of CEOs in S&P 500 businesses. Despite making up 47% of the US workforce, controlling 
+                            approximately 75% of family spending, and more than 50% of personal wealth in the country, women only make up 
+                            20% of the S & P 500 directors as of 2016. With an average S & P Board 500 of 11 members, there are around 2 women 
+                            on the board of directors. As of 2014, there were just 4.6% female Fortune 500 CEOs and 14.6% female senior 
+                            executives. Women held 17.9% of the directorships on Fortune 1000 firms' boards of directors in 2015, which implies 
+                            unequal gender participation on corporate boards. Although there are more women on the boards of Fortune 500 
+                            businesses than there were a decade ago, the average growth rate is still barely a half percent each year. There 
+                            are still no women on the boards of directors of one in nine companies on the Fortune 500 list. In 2014, less than 
+                            5% of the 22,000 worldwide enterprises had female CEOs, slightly over half had no female senior executives, and 
+                            over 60% had no women on their boards.  Nevertheless, there are notable discrepancies across other nations: women 
+                            made up at least 20% of senior managers and board members in Norway, Latvia, Bulgaria, and Slovenia, but in Japan, 
+                            they made up only 2% of board members and 2.5% of senior managers.
+                        </p>
+                        <p>
+                            According to the non-profit research group Catalyst, having a high proportion of women on a board of directors is 
+                            connected with how well a company performs on four out of the six CSP (corporate social efficiency) indicators: 
+                            supply chain, community, environment, and community. The diversity of corporate boards and charity contributions 
+                            are positively correlated, according to Catalyst. The transition from the absence of women in corporate management 
+                            (CEO, Board of directors, and other senior management positions) to the proportion of women in 30% is associated 
+                            with a 1% increase in net margin, which results in a 15% increase in profit, according to a recent report by the 
+                            Peterson Institute for International Economics. Over the next 20 years, millions of so-called "Baby Boomer" 
+                            managers and executives are expected to retire, creating a predicted talent shortage. As a result, an increasing 
+                            number of companies may view female leaders as an underutilized source of talent, experience, and leadership. 
+                            However, a 2018 research found that, even when they perform their jobs effectively, female CEOs are 45% more 
+                            likely to be dismissed than their male counterparts. According to a 2015 Ernst & Young and ESPN research of 400 
+                            top female executives, there is a link between success in sports and business. More than 52% of senior managers 
+                            competed in sports, compared to 39% of women in lower management positions. In high school, college, or both, 65% 
+                            of the CEOs on Fortune's 2017 list of the most powerful women participated in sports.
+                        </p>
+                        <p>
+                            Women's business cases have never looked better on paper. But the figures only provide a portion of the narrative. 
+                            Women-owned firms are still in the minority, and the obstacles they must overcome to become entrepreneurs are 
+                            significant and frequently dissimilar from those their male colleagues must overcome. Women in business encounter 
+                            a variety of challenges. Some of the challenges faced by women entrepreneurs are the following:
+                        </p>
+                        <ol>
+                            <li>
+                                Contravening societal norms: This may not be essential when talking about business difficulties with executives 
+                                that are primarily male. In such circumstances, women could feel pressured to adopt a traditional "male" 
+                                corporate mentality that is aggressive, competitive, and even unpleasant. Successful female CEOs, however, 
+                                think that the secret to exceeding expectations is to be loyal to who you are and develop your voice.
+                            </li>
+                            <li>
+                                Finding funds: Not all startup owners seek out advisors to assist them to launch their company, but those that 
+                                are aware of how challenging the application process may do so. Capital raising is more difficult for 
+                                women-owned enterprises. Less than 3% of venture-funded businesses have female CEOs, according to a Babson 
+                                College survey from 2014.
+                            </li>
+                            <li>
+                                Having difficulty getting attention: Most female CEOs eventually find themselves in a field or workplace 
+                                dominated by males who are unwilling to acknowledge their position of authority.
+                            </li>
+                            <li>
+                                Taking pride in your achievements: Encouragement of women's social and consensus-building skills may 
+                                cause some of them to subconsciously doubt their value.
+                            </li>
+                            <li>
+                                Establishing a support system: Since having a strong support system is crucial for entrepreneurship success, 
+                                it is not unexpected that 48% of female founders say that their ability to advance their careers is 
+                                constrained by a lack of mentors.
+                            </li>
+                            <li>
+                                Juggling family and work life: To achieve this elusive work-life balance, entrepreneurial parents must 
+                                discover methods to reconcile their obligations to their family and their businesses.
+                            </li>
+                            <li>
+                                Overcoming failure fear: The road to success is strewn with setbacks, blunders, and failures, but it 
+                                may still get you to where you want to go—as long as you don't lose sight of your ultimate objective.
+                            </li>
+                        </ol>
+                        <p style="text-align:center;">
+                            <u>Women in Social Sector</u>
+                        </p>
+                        <p>
+                            The duty of researching roles, equity, and justice for the profession and for society falls to social workers. 
+                            "A social worker's job is to advocate for social justice in all facets of life, including real change for the 
+                            betterment of the future." Women are leading the way in social work, a sector that is expanding, in defending 
+                            women's rights. In approved social work universities, 74.1% of full-time instructors are women, according to 
+                            CBRE's annual report for 2019.
+                        </p>
+                        <p>
+                            In social work, males hold disproportionately more leadership roles than women, yet women still predominate in 
+                            the field. Despite the fact that there are many more women working in this sector than males, MacPhail 
+                            maintained that it is more accurate to refer to social work as a profession with a female majority that 
+                            is controlled by men. This is a crucial point since the assertion that social roles are "dominated by women" 
+                            implies that women have more authority only because there are so many more of them. It does, however, overlook 
+                            certain crucial details. First off, by having fewer men in this field, men may potentially have positions of 
+                            greater institutional authority. Secondly, careers in social work and other fields involving the care of others 
+                            are undervalued. Third, it's going to be considerably more difficult to understand how power operates in social 
+                            work organisations and how it connects to gender. One of the rare instances where gender is explicitly acknowledged 
+                            is in the conversation about preventing harassment and discrimination within the philosophy and practise of 
+                            social work. But they also frequently rely on incomplete reports. For instance, gender is referred to in 
+                            Thompson's essay as "a basic feature of human experience, exposing the omnipresent collection of disparities 
+                            between men and women."
+                        </p>
+                        <p>
+                            Eight close acquaintances are the average number of friends for American women. With an average of one to three 
+                            such social relationships, rural women in India's states of Uttar Pradesh, Orissa, and Uttarakhand are 
+                            substantially more socially isolated. According to nationwide surveys, 60% of women are prohibited from travelling 
+                            alone to destinations including marketplaces, hospitals, and areas outside of their town. A quarter of husbands 
+                            always want to know where their wives are, while a quarter of women are not permitted to visit their female 
+                            friends.
+                        </p>
+                        <p>
+                            Social networks are crucial, especially in developing nations with underdeveloped markets and institutions. 
+                            Social networks are a source of information about things like informal loans, insurance, jobs, and rights, as 
+                            well as medical services and technologies, such as those related to fertility and family planning, according to 
+                            S Anukriti, an economist at the World Bank. "Social networks are an important and low-importance component of the process of economic and Human Development," Anukriti said. ”
+                        </p>
+                        <p>
+                            In order to learn more about their social networks and how these networks affected their lives, a recent research 
+                            of 671 married women in the Indian state of Uttar Pradesh interviewed them. Each lady was asked to list a maximum 
+                            of five individuals, aside from her husband and mother-in-law, with whom she might speak about personal matters 
+                            and family planning-related topics. Only one such coworker was mentioned on average by respondents.This social 
+                            exclusion may have a significant influence on women's chances and life decisions. This is particularly true for 
+                            family planning, as just 19% of the women polled reported using contemporary methods of contraception despite 50% 
+                            of them stating they did not want another child. Due to the limited number of social contacts, social networks can 
+                            have a significant impact on the spread of new ideas and standards.
+                        </p>
+                        <p>
+                            The majority of social professionals in the field are women. Both inside and outside of the profession, they 
+                            encounter bias. The National Body for Women (NCOWI), a board-approved committee of NASW, was founded in 1975 
+                            with the mission of creating, evaluating, and overseeing NASW initiatives that significantly address women's 
+                            concerns. The objective of NCOWI is just as crucial today as it was when it was first established since there 
+                            are still issues that oppress and disrespect women.
+                        </p>
+                        <p>
+                            The founder of social work, Jane Addams, was the first American woman to receive the Nobel Peace Prize. He 
+                            only affected women's opinions on social issues. Since Adams, social workers who support and campaign for 
+                            women's rights have had to deal with issues such intimate partner abuse, human trafficking, gender bias/harassment, 
+                            reproductive justice, and equal pay for equal labour. Today, "women's problems" are frequently restricted to 
+                            concerns about their health and reproduction; nonetheless, practically every issue concerns women and calls for 
+                            an intersex gender perspective. The profession must support coordinated responses as long as structural sexism is 
+                            exploited to combat discrimination against women. Social workers are taught to research roles, equality, and 
+                            justice with women who serve on a daily basis as well as in society at large. 
+                        </p>
+                        <p>
+                            In debates about preventing harassment and discrimination within the theory and practise of social work, gender 
+                            is one of the uncommon situations where it is expressly allowed. However, they also frequently depend on 
+                            inaccurate reports. For instance, Thompson describes gender as "a basic element of human experience, showing the 
+                            omnipresent collection of inequities between men and women" in his article. There are other books that treat 
+                            gender as a practise and stress its setting within the framework of late or reflex modernity, but this approach 
+                            interprets gender notions at the level of attitudes, where it seems to just be a reciprocal attribute. Although 
+                            attempts are made in social work to investigate how gender connects to concerns of racism, class, disability, age, 
+                            or sexuality, gender is frequently viewed as a separate issue. Feminist care work, which promotes the idea that 
+                            women shouldn't be required to take care of dependents, is an illustration of this. The work of feminists with 
+                            disabilities suggests that the category of "women" includes those who are cared for, and these arguments put women 
+                            and men with disabilities as "burdens" notwithstanding the importance of this issue addressing the effects of the 
+                            state and family dependency on unpaid care. Others pointed out the imbalance of such debates on the purported 
+                            heterosexual pair, as is common. The majority of feminist social work literature views gender as the cornerstone 
+                            of equality and a shared objective. A common gender experience, "in the spirit of being a woman, is associated 
+                            with men, children, family living, employment and working conditions," according to Hammer and Statham's book 
+                            "Women and Social Work," for instance, develops what they refer to as "women-oriented practises" and contends 
+                            that, given that women make up the majority of social workers and service users.
+                        </p>
+                        <p style="text-align:center;">
+                            <u>Conclusion</u>
+                        </p>
+                        <p>
+                            Although there are several barriers to Indian women's full economic engagement, it is evident that the majority 
+                            of them may be traced to societal conventions that limit their freedom of action and, as a result, prevent 
+                            them from contributing fully to the economy. It is also obvious that in order to increase technological 
+                            opportunities, current sociocultural norms must be considered. The integration of women into digital technology, 
+                            banking, and the labour market is severely impacted by gender inequalities in education and skills, unpaid 
+                            labour, lack of security, and restrictions on their freedom of movement.
+                        </p>
+                        <p>
+                            Gender-neutral policies do not result in the same outcomes for men and women, according to current trends. The 
+                            proliferation of gender stereotypes that lead to occupational segregation, uneven learning and skill development 
+                            opportunities for boys and girls, as well as informal and unpaid employment for women, must thus be considered in 
+                            policies aiming at expanding women's involvement in the workforce. In order for women to grow and take the lead 
+                            in the economy, India also has to institutionalise the distribution of care labour between men and women, lower 
+                            the gender wage gap, and actively seek to establish equal opportunities for them free from abuse.
+                        </p>
+                        <p>
+                            It is essential to enhance the participation of women in leadership and administrative roles in the social 
+                            sector since women have demonstrated that they are capable and successful leaders. It is feasible and doable 
+                            to acquire the hard and soft skills required for leadership in this field. Invest time in developing the required 
+                            abilities and establishing your formal and informal experience if you are interested in a managerial role. 
+                        </p>
+                        <p>
+                            Bibliography
+                        </p>
+                        <ol>
+                            <li>
+                                <a href="http://www.yorku.ca/lfoster/201112/HRES3890/lectures/FEMINIST_THEORIES.hm">
+                                    http://www.yorku.ca/lfoster/201112/HRES3890/lectures/FEMINIST_THEORIES.hm</a>
+                            </li>
+                            <li>
+                                <a href="https://www.unwomen.org/en/what-we-do/youth/strengthening-young-women-leadership">
+                                    https://www.unwomen.org/en/what-we-do/youth/strengthening-young-women-leadership</a>
+                            </li>
+                            <li>
+                                Andersen ML. (2005) Thinking about women: A quarter century’s view. Gender & Society 19(4): 437–455.
+                            </li>
+                            <li>
+                                Brown HC. (1992) Lesbians, the state and social work practice. In: Langan M, Day L. Women, 
+                                Oppression and Social Work: Issues in Anti-Discriminatory Practice, London: Routledge, pp. 201–219.
+                            </li>
+                            <li>
+                                The LFP rate used in this paper is from: Erin K. Fletcher, Rohini Pande, and Charity Troyer Moore, 
+                                “Women and Work in India: Descriptive Evidence and a Review of Potential Policies,” CID Faculty Working 
+                                Paper, no. 339 (December 2017)
+                            </li>
+                            <li>
+                                <a href="https://data.worldbank.org/indicator/SL.TLF.CACT.FE.ZS">
+                                    https://data.worldbank.org/indicator/SL.TLF.CACT.FE.ZS</a>
+                            </li>
+                            <li>
+                                <a href="https://data.worldbank.org/indicator/SL.TLF.CACT.FE.ZS">
+                                    https://data.worldbank.org/indicator/SL.TLF.CACT.FE.ZS
+                                </a>
+                            </li>
+                            <li>
+                                World Economic Forum, “Global Gender Gap Report,” (2017).
+                            </li>
+                            <li>
+                                International Labour Organization, “India Wage Report, Wage policies for decent work and inclusive growth”, (2018).
+                            </li>
+                            <li>
+                                “India Must Focus on the Inclusion of Women in its Economy: IMF Chief”, The Hindu Business Line, January 24, 2018
+                            </li>
+                            <li>
+                                World Bank, “Jobless Growth?” South Asia Economic Focus (2018).
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" action="https://formsubmit.co/iram12336@gmail.com" method="POST" id="contactForm" novalidate="novalidate">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name" name="Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email" name="Email"
+                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject" name="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message" name="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://mobile.twitter.com/i_iram_98"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/iram-fatima-77a321147"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="https://www.instagram.com/_random.com___"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!-- <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+            </div> -->
+            <p class="m-0">&copy;
+                All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://hasnenalikhan.herokuapp.com">
+                    Hasnen Ali Khan</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <script>
+        function openform1() {
+          document.getElementById("myForm1").style.display = "block";
+        }
+        
+        function closeform1() {
+          document.getElementById("myForm1").style.display = "none";
+        }
+
+        function openform2() {
+          document.getElementById("myForm2").style.display = "block";
+        }
+
+        function closeform2() {
+          document.getElementById("myForm2").style.display = "none";
+        }
+
+        function openform3() {
+          document.getElementById("myForm3").style.display = "block";
+        }
+
+        function closeform3() {
+          document.getElementById("myForm3").style.display = "none";
+        }
+        </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/typed/typed.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
